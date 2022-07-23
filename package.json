@@ -1,15 +1,20 @@
 {
   "name": "thanasak-homepage",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Thanasak's website",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
+    "prettier": "prettier -write .",
     "lint": "next lint"
   },
+  "author": "Thanasak Limsila",
+  "license": "MIT",
   "dependencies": {
     "next": "12.2.3",
+    "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
