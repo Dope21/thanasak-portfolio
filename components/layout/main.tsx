@@ -1,17 +1,14 @@
-import Footer from '../footer'
 import Meta from '../meta'
 import Navbar from '../navbar'
 
-const Main = ({ children }) => {
+const Main = ({ children, router }) => {
   return (
-    <main className="max-w-3xl mx-auto">
+    <main>
       <Meta />
 
-      <Navbar />
+      <Navbar path={router.asPath} />
 
-      <div>{children}</div>
-
-      <Footer />
+      <div className="max-w-3xl mx-auto pt-16">{children}</div>
     </main>
   )
 }
