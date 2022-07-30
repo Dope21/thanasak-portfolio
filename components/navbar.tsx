@@ -37,9 +37,6 @@ const Navbar = ({ path }) => {
             </a>
           </Link>
           <ul className="items-center ml-7 hidden sm:flex">
-            <NavLink path={path} href="/">
-              Home
-            </NavLink>
             <NavLink path={path} href="/projects">
               Projects
             </NavLink>
