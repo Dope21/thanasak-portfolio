@@ -11,11 +11,11 @@ const Theme = () => {
   }
   return (
     <div
-      className="inline-flex relative items-center cursor-pointer select-none w-[50px] h-[28px] rounded-full bg-gradient-to-r from-blue-500 to-green-400"
+      className="inline-flex relative items-center cursor-pointer select-none w-[70px] h-[38px] rounded-full bg-gradient-to-r from-blue-500 to-green-400"
       onClick={handleTheme}
     >
       <div
-        className={`absolute h-6 w-6 bg-white rounded-full left-[2px] top-[2px] transition-all flex items-center justify-center 
+        className={`absolute h-[34px] w-[34px] bg-white rounded-full left-[2px] top-[2px] transition-all flex items-center justify-center 
         ${theme ? 'translate-x-[95%]' : ''}`}
       >
         <Image
