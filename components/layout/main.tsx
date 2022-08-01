@@ -9,7 +9,9 @@ const Main = ({ children, router }) => {
 
       <Navbar path={router.asPath} />
 
-      <div className="max-w-3xl mx-auto pt-16">{children}</div>
+      <article className="max-w-3xl mx-auto pt-16 pb-4 px-4">
+        {children}
+      </article>
 
       <Footer />
     </main>
