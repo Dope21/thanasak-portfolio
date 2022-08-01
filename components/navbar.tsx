@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Theme from './theme-button'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { useState } from 'react'
+import Logo from './logo'
 
 const NavLink = ({ href, children, path }) => {
   const active = path === href
@@ -31,11 +32,7 @@ const Navbar = ({ path }) => {
     <nav className="fixed w-full backdrop-blur-sm bg-white/30">
       <div className="p-2 flex w-full items-center justify-between max-w-3xl mx-auto">
         <div className="flex w-full items-center">
-          <Link href="/">
-            <a className="font-bold text-black text-sm dark:text-white">
-              THANASAK LIMSILA
-            </a>
-          </Link>
+          <Logo />
           <ul className="items-center ml-7 hidden sm:flex">
             <NavLink path={path} href="/projects">
               Projects
