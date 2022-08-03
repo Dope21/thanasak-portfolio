@@ -24,7 +24,7 @@ const Icon = ({ children, icon }) => {
       <div className="relative min-w-[50px] min-h-[50px]">
         <Image src={icon} layout="fill" objectFit="contain" alt="skill-icon" />
       </div>
-      <p className="mt-2 text-center">{children}</p>
+      <p className="mt-2 text-center sub-text-color">{children}</p>
     </div>
   )
 }
