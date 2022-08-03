@@ -4,10 +4,10 @@ import { AiOutlineFolderOpen } from 'react-icons/ai'
 const Banner = () => {
   return (
     <div className="flex flex-col items-center justify-center pt-9 text-center">
-      <h2 className="font-bold text-3xl md:text-5xl uppercase text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+      <h2 className="font-bold text-3xl md:text-5xl uppercase banner-color">
         thanasak limsila
       </h2>
-      <p className="md:text-xl text-zinc-500 mt-2 tracking-wide">
+      <p className="md:text-xl sub-text-color mt-2 tracking-wide">
         Hello, I&apos;m a Full-Stack developer based in Thailand!
       </p>
 

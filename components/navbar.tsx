@@ -9,13 +9,7 @@ const NavLink = ({ href, children, path }) => {
   return (
     <li className="p-2">
       <Link href={href}>
-        <a
-          className={
-            active
-              ? 'font-bold text-black dark:text-white '
-              : 'text-zinc-600 dark:text-white hover:text-black'
-          }
-        >
+        <a className={`sub-text-color ${active ? 'font-bold text-black' : ''}`}>
           {children}
         </a>
       </Link>
@@ -29,7 +23,7 @@ const Navbar = ({ path }) => {
     setMenu(!menu)
   }
   return (
-    <nav className="fixed w-full backdrop-blur-sm bg-white/30">
+    <nav className="fixed w-full backdrop-blur-sm">
       <div className="p-2 flex w-full items-center justify-between max-w-3xl mx-auto">
         <div className="flex w-full items-center">
           <Logo />
