@@ -1,6 +1,6 @@
 import Banner from '../components/banner'
 import Section from '../components/section'
-import { Title } from '../components/title'
+import { Heading } from '../components/title'
 import { BlackBtn } from '../components/button'
 import { FaTelegramPlane } from 'react-icons/fa'
 import Social from '../components/social'
@@ -18,7 +18,7 @@ const Home = () => {
       </Section>
 
       <Section>
-        <Title>About Me</Title>
+        <Heading>About Me</Heading>
         <p className="text-zinc-500">
           I&apos;m currnetly studying in Bachelor degree of Computer
           Engineering. Due to being a college student, I&apos;m not available
@@ -36,7 +36,7 @@ const Home = () => {
       </Section>
 
       <Section>
-        <Title>Other social media!</Title>
+        <Heading>Other social media!</Heading>
         <Social
           href={'https://github.com/Dope21'}
           icon={<AiOutlineGithub size={30} />}
