@@ -19,14 +19,14 @@ const Home = () => {
 
       <Section>
         <Heading>About Me</Heading>
-        <p className="text-zinc-500">
+        <p className="sub-text-color">
           I&apos;m currnetly studying in Bachelor degree of Computer
           Engineering. Due to being a college student, I&apos;m not available
-          for a full-time job right now.{' '}
-          <span className="font-bold text-black dark:text-white">
+          for a full-time job right now.
+          <strong className="main-text-color">
             I&apos;m however interested in freelance projects, part-time job,
             and internship opportunities.
-          </span>
+          </strong>
         </p>
         <div className="flex justify-center mt-6">
           <BlackBtn href="/contact" icon={<FaTelegramPlane size={20} />}>
