@@ -4,7 +4,7 @@ import Footer from '../footer'
 
 const Main = ({ children, router }) => {
   return (
-    <main>
+    <main className="min-h-screen">
       <Meta />
 
       <Navbar path={router.asPath} />
