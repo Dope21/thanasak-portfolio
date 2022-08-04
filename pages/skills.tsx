@@ -17,6 +17,7 @@ import MysqlLogo from '../public/images/skills/mysql.png'
 import PsLogo from '../public/images/skills/ps.png'
 import FigmaLogo from '../public/images/skills/figma.png'
 import GitLogo from '../public/images/skills/git.png'
+import Article from '../components/layout/article'
 
 const Icon = ({ children, icon }) => {
   return (
@@ -31,44 +32,46 @@ const Icon = ({ children, icon }) => {
 
 const Skills = () => {
   return (
-    <Section>
-      <Heading>The Technologies I use!</Heading>
+    <Article>
+      <Section>
+        <Title>The Technologies I use!</Title>
 
-      <div className="mt-10">
-        <Section>
-          <Title>Front-End</Title>
-          <div className="grid grid-cols-5 gap-4 items-center justify-center">
-            <Icon icon={TsLogo}>TypeScript</Icon>
-            <Icon icon={ReactLogo}>React.js</Icon>
-            <Icon icon={NextLogo}>Next.js</Icon>
-            <Icon icon={TailwindLogo}>Tailwind</Icon>
-            <Icon icon={EmotionLogo}>Emotion</Icon>
-            <Icon icon={ChakraLogo}>Chakra UI</Icon>
-            <Icon icon={B5Logo}>Bootstrap 5</Icon>
-            <Icon icon={SassLogo}>Sass/SCSS</Icon>
-            <Icon icon={JqLogo}>jQuery</Icon>
-          </div>
-        </Section>
+        <div className="mt-10">
+          <Section>
+            <Heading>Front-End</Heading>
+            <div className="grid grid-cols-5 gap-4 items-center justify-center">
+              <Icon icon={TsLogo}>TypeScript</Icon>
+              <Icon icon={ReactLogo}>React.js</Icon>
+              <Icon icon={NextLogo}>Next.js</Icon>
+              <Icon icon={TailwindLogo}>Tailwind</Icon>
+              <Icon icon={EmotionLogo}>Emotion</Icon>
+              <Icon icon={ChakraLogo}>Chakra UI</Icon>
+              <Icon icon={B5Logo}>Bootstrap 5</Icon>
+              <Icon icon={SassLogo}>Sass/SCSS</Icon>
+              <Icon icon={JqLogo}>jQuery</Icon>
+            </div>
+          </Section>
 
-        <Section>
-          <Title>Back-End</Title>
-          <div className="grid grid-cols-5 gap-4 items-center justify-center">
-            <Icon icon={NodeLogo}>Node.js</Icon>
-            <Icon icon={PhpLogo}>PHP</Icon>
-            <Icon icon={MysqlLogo}>MySQL</Icon>
-          </div>
-        </Section>
+          <Section>
+            <Heading>Back-End</Heading>
+            <div className="grid grid-cols-5 gap-4 items-center justify-center">
+              <Icon icon={NodeLogo}>Node.js</Icon>
+              <Icon icon={PhpLogo}>PHP</Icon>
+              <Icon icon={MysqlLogo}>MySQL</Icon>
+            </div>
+          </Section>
 
-        <Section>
-          <Title>Other</Title>
-          <div className="grid grid-cols-5 gap-4 items-center justify-center">
-            <Icon icon={GitLogo}>Git</Icon>
-            <Icon icon={FigmaLogo}>Figma</Icon>
-            <Icon icon={PsLogo}>Photoshop</Icon>
-          </div>
-        </Section>
-      </div>
-    </Section>
+          <Section>
+            <Heading>Other</Heading>
+            <div className="grid grid-cols-5 gap-4 items-center justify-center">
+              <Icon icon={GitLogo}>Git</Icon>
+              <Icon icon={FigmaLogo}>Figma</Icon>
+              <Icon icon={PsLogo}>Photoshop</Icon>
+            </div>
+          </Section>
+        </div>
+      </Section>
+    </Article>
   )
 }
 
