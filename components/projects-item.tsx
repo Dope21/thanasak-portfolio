@@ -12,7 +12,7 @@ const Project = ({ src, alt, title, desc, href }) => {
             src={src}
             alt={alt}
             placeholder="blur"
-            className="rounded-md flex"
+            className="rounded-md"
           />
         </div>
 
