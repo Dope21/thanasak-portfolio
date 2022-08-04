@@ -23,7 +23,7 @@ const Navbar = ({ path }) => {
     setMenu(!menu)
   }
   return (
-    <nav className="fixed w-full backdrop-blur-sm">
+    <nav className="fixed w-full backdrop-blur-sm z-10">
       <div className="p-2 flex w-full items-center justify-between max-w-3xl mx-auto">
         <div className="flex w-full items-center">
           <Logo />
