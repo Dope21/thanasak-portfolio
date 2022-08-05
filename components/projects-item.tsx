@@ -7,7 +7,7 @@ const Project = ({ src, alt, title, desc, href }) => {
   return (
     <Section>
       <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-10 relative">
-        <div className="max-w-[275px] max-h-[175px]">
+        <div className="max-w-[275px] max-h-[175px] flex items-center justify-center  shadow-lg">
           <Image
             src={src}
             alt={alt}
