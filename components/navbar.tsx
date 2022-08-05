@@ -7,11 +7,13 @@ import Logo from './logo'
 const NavLink = ({ href, children, path }) => {
   const active = path === href
   return (
-    <li className="p-2">
+    <li
+      className={`p-2 rounded-md hover:bg-teal-400 hover:dark:bg-red-400 ${
+        active ? 'bg-teal-400 dark:bg-red-400' : ''
+      }`}
+    >
       <Link href={href}>
-        <a className={`sub-text-color ${active ? 'font-bold text-black' : ''}`}>
-          {children}
-        </a>
+        <a className="main-text-color">{children}</a>
       </Link>
     </li>
   )
@@ -27,7 +29,7 @@ const Navbar = ({ path }) => {
       <div className="p-2 flex w-full items-center justify-between max-w-3xl mx-auto">
         <div className="flex w-full items-center">
           <Logo />
-          <ul className="items-center ml-7 hidden sm:flex">
+          <ul className="items-center ml-7 hidden sm:flex gap-2">
             <NavLink path={path} href="/projects">
               Projects
             </NavLink>
@@ -64,7 +66,9 @@ const Navbar = ({ path }) => {
                   <a className="py-2 px-5 hover:text-black">Skills</a>
                 </Link>
                 <Link href="/contact">
-                  <a className="py-2 px-5 hover:text-black">Contact</a>
+                  <a className="py-2 px-5 hover:bg-teal-400 dark:bg-red-400">
+                    Contact
+                  </a>
                 </Link>
               </div>
             </div>
