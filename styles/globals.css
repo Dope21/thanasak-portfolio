@@ -32,7 +32,7 @@
   }
 
   .sub-text-color {
-    @apply text-zinc-500 dark:text-white;
+    @apply text-zinc-500 dark:text-slate-300;
   }
 
   .social-color {
