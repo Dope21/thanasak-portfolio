@@ -11,6 +11,10 @@
     box-sizing: border-box;
   }
 
+  body {
+    @apply overscroll-y-none;
+  }
+
   main {
     @apply bg-white dark:bg-neutral-900;
   }
