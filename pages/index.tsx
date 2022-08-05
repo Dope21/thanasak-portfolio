@@ -21,10 +21,10 @@ const Home = () => {
 
         <Section>
           <Title>About Me</Title>
-          <p className="sub-text-color">
+          <p className="sub-text-color tracking-wider">
             I&apos;m currnetly studying in Bachelor degree of Computer
             Engineering. Due to being a college student, I&apos;m not available
-            for a full-time job right now.
+            for a full-time job right now.{' '}
             <strong className="main-text-color">
               I&apos;m however interested in freelance projects, part-time job,
               and internship opportunities.
