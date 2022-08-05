@@ -17,7 +17,7 @@ import MysqlLogo from '../public/images/skills/mysql.png'
 import PsLogo from '../public/images/skills/ps.png'
 import FigmaLogo from '../public/images/skills/figma.png'
 import GitLogo from '../public/images/skills/git.png'
-import Article from '../components/layout/article'
+import { Article } from '../components/layout'
 
 const Icon = ({ children, icon }) => {
   return (

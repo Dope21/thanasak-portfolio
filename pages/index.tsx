@@ -4,12 +4,12 @@ import { Title } from '../components/title'
 import { MainBtn } from '../components/button'
 import { FaTelegramPlane } from 'react-icons/fa'
 import Social from '../components/social'
+import { Article } from '../components/layout'
 import {
   AiOutlineGoogle,
   AiFillLinkedin,
   AiOutlineGithub,
 } from 'react-icons/ai'
-import Article from '../components/layout/article'
 
 const Home = () => {
   return (

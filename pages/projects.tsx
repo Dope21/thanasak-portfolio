@@ -1,5 +1,5 @@
 import { Title } from '../components/title'
-import Article from '../components/layout/article'
+import { Article } from '../components/layout'
 import Project from '../components/projects-item'
 import Section from '../components/section'
 
@@ -49,7 +49,7 @@ const Projects = () => {
           alt="bootstrap-landing-page"
           title="Bootstrap 5 Landing page"
           desc="A Bootstrap responsive landing page with Semantic HTML and little animation with jQuery."
-          href="/projects/bootstrap"
+          href="/projects/creative"
         />
         <Project
           src={cloud}
