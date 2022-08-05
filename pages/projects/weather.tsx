@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Article from '../../components/layout/article'
+import { Article } from '../../components/layout'
 import Section from '../../components/section'
 import { Title } from '../../components/title'
 import { AiOutlineRight } from 'react-icons/ai'
@@ -31,9 +31,9 @@ const Project = () => {
       <Section>
         <Section>
           <div className="flex">
-            <span className="mt-1 text-blue-500 dark:text-pink-500">
+            <span className="mt-1">
               <Link href="/projects">
-                <a className="flex items-center">
+                <a className="link-color flex items-center">
                   projects <AiOutlineRight size={10} className="mx-2" />
                 </a>
               </Link>
@@ -53,10 +53,10 @@ const Project = () => {
         </Section>
 
         <Section>
-          <div className="text-sm flex flex-col gap-1">
+          <div className="flex flex-col gap-1">
             <div className="flex items-center">
               <Badge>Stack</Badge>
-              <p className="sub-text-color ">
+              <p className="sub-text-color">
                 Next.js, Tailwind, OpenWeatherMap API
               </p>
             </div>
@@ -65,6 +65,8 @@ const Project = () => {
               <a
                 className="link-color"
                 href="https://github.com/Dope21/next-weather-app"
+                target="_blank"
+                rel="noreferrer"
               >
                 https://github.com/Dope21/next-weather-app/
               </a>
@@ -73,7 +75,9 @@ const Project = () => {
               <Badge>Website</Badge>
               <a
                 className="link-color"
-                href="https://weather-app-three-theta.vercel.app/ "
+                href="https://weather-app-three-theta.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
               >
                 https://weather-app-three-theta.vercel.app/
               </a>
