@@ -1,7 +1,7 @@
 import Banner from '../components/banner'
 import Section from '../components/section'
 import { Title } from '../components/title'
-import { BlackBtn } from '../components/button'
+import { MainBtn } from '../components/button'
 import { FaTelegramPlane } from 'react-icons/fa'
 import Social from '../components/social'
 import {
@@ -31,9 +31,9 @@ const Home = () => {
             </strong>
           </p>
           <div className="flex justify-center mt-6">
-            <BlackBtn href="/contact" icon={<FaTelegramPlane size={20} />}>
+            <MainBtn href="/contact" icon={<FaTelegramPlane size={20} />}>
               Contact
-            </BlackBtn>
+            </MainBtn>
           </div>
         </Section>
 
