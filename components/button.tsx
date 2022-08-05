@@ -1,10 +1,21 @@
 import Link from 'next/link'
 import { AiOutlineGithub } from 'react-icons/ai'
 
-export const BlackBtn = ({ children, icon, href }) => {
+export const MainBtn = ({ children, icon, href }) => {
   return (
     <Link href={href}>
       <a className="bg-black text-white inline-flex items-center px-4 py-2 border border-black rounded-md gap-1 tracking-wide dark:text-black dark:bg-white dark:border-white">
+        {children}
+        {icon}
+      </a>
+    </Link>
+  )
+}
+
+export const BlackBtn = ({ children, icon, href }) => {
+  return (
+    <Link href={href}>
+      <a className="bg-black text-white inline-flex items-center px-4 py-2 border border-black rounded-md gap-1 tracking-wide">
         {children}
         {icon}
       </a>
