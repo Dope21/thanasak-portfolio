@@ -19,6 +19,10 @@
     @apply bg-white/30 dark:bg-neutral-900/30;
   }
 
+  .link-color {
+    @apply text-blue-500 dark:text-pink-500 hover:underline hover:underline-offset-2;
+  }
+
   .theme-button-color {
     @apply bg-gradient-to-r from-blue-500 to-green-400 dark:from-pink-500 dark:to-yellow-500;
   }
