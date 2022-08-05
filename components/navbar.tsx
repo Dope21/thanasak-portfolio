@@ -7,13 +7,14 @@ import Logo from './logo'
 const NavLink = ({ href, children, path }) => {
   const active = path === href
   return (
-    <li
-      className={`p-2 rounded-md hover:bg-teal-400 hover:dark:bg-red-400 ${
-        active ? 'bg-teal-400 dark:bg-red-400' : ''
-      }`}
-    >
+    <li>
       <Link href={href}>
-        <a className="main-text-color">{children}</a>
+        <a
+          className={`main-text-color p-2 rounded-md cursor-pointer hover:underline hover:underline-offset-2
+          ${active ? 'bg-teal-400 dark:bg-red-400' : ''}`}
+        >
+          {children}
+        </a>
       </Link>
     </li>
   )
