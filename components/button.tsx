@@ -47,3 +47,14 @@ export const GithubBtn = () => {
     </a>
   )
 }
+
+export const SubmitBtn = ({ children }) => {
+  return (
+    <button
+      type="submit"
+      className="bg-black text-white inline-flex items-center px-4 py-2 border tracking-wide border-black rounded-md gap-1 dark:text-black dark:bg-white dark:border-white"
+    >
+      {children}
+    </button>
+  )
+}
