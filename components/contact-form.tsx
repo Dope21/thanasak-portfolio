@@ -82,6 +82,7 @@ const ContactForm = () => {
             role="alert"
           >
             Your message has been successfully sent. I will contact you very
+            soon!
           </p>
         ) : (
           <>
