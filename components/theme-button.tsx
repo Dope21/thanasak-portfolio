@@ -11,7 +11,7 @@ const Theme = () => {
       if (currentTheme) {
         return currentTheme
       } else return 'light'
-    }
+    } else 'light'
   })
 
   useEffect(() => {
