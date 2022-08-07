@@ -1,5 +1,5 @@
 import ContactForm from '../components/contact-form'
-import { Article } from '../components/layout'
+import Layout from '../components/layout/content'
 import Section from '../components/section'
 import { Title } from '../components/title'
 import Social from '../components/social'
@@ -11,15 +11,15 @@ import {
 
 const Contact = () => {
   return (
-    <Article>
+    <Layout>
       <Section>
         <Title>Sending your message to me!</Title>
 
-        <Section>
+        <Section delay={0.2}>
           <ContactForm />
         </Section>
 
-        <Section>
+        <Section delay={0.3}>
           <Title>Other social media!</Title>
           <Social
             href={'https://github.com/Dope21'}
@@ -43,7 +43,7 @@ const Contact = () => {
           </Social>
         </Section>
       </Section>
-    </Article>
+    </Layout>
   )
 }
 

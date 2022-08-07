@@ -4,7 +4,7 @@ import { Title } from '../components/title'
 import { MainBtn } from '../components/button'
 import { FaTelegramPlane } from 'react-icons/fa'
 import Social from '../components/social'
-import { Article } from '../components/layout'
+import Layout from '../components/layout/content'
 import {
   AiOutlineGoogle,
   AiFillLinkedin,
@@ -13,13 +13,13 @@ import {
 
 const Home = () => {
   return (
-    <Article>
+    <Layout>
       <div>
-        <Section>
+        <Section delay={0.2}>
           <Banner />
         </Section>
 
-        <Section>
+        <Section delay={0.3}>
           <Title>About Me</Title>
           <p className="sub-text-color tracking-wider">
             I&apos;m currnetly studying in Bachelor degree of Computer
@@ -37,7 +37,7 @@ const Home = () => {
           </div>
         </Section>
 
-        <Section>
+        <Section delay={0.4}>
           <Title>Other social media!</Title>
           <Social
             href={'https://github.com/Dope21'}
@@ -61,7 +61,7 @@ const Home = () => {
           </Social>
         </Section>
       </div>
-    </Article>
+    </Layout>
   )
 }
 

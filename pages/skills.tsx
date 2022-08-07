@@ -1,3 +1,4 @@
+import Layout from '../components/layout/content'
 import Section from '../components/section'
 import { Heading, Title } from '../components/title'
 import Image from 'next/image'
@@ -17,7 +18,6 @@ import MysqlLogo from '../public/images/skills/mysql.png'
 import PsLogo from '../public/images/skills/ps.png'
 import FigmaLogo from '../public/images/skills/figma.png'
 import GitLogo from '../public/images/skills/git.png'
-import { Article } from '../components/layout'
 
 const Icon = ({ children, icon }) => {
   return (
@@ -32,12 +32,12 @@ const Icon = ({ children, icon }) => {
 
 const Skills = () => {
   return (
-    <Article>
+    <Layout>
       <Section>
         <Title>The Technologies I use!</Title>
 
         <div className="mt-10">
-          <Section>
+          <Section delay={0.2}>
             <Heading>Front-End</Heading>
             <div className="grid grid-cols-5 gap-4 items-center justify-center">
               <Icon icon={TsLogo}>TypeScript</Icon>
@@ -52,7 +52,7 @@ const Skills = () => {
             </div>
           </Section>
 
-          <Section>
+          <Section delay={0.3}>
             <Heading>Back-End</Heading>
             <div className="grid grid-cols-5 gap-4 items-center justify-center">
               <Icon icon={NodeLogo}>Node.js</Icon>
@@ -61,7 +61,7 @@ const Skills = () => {
             </div>
           </Section>
 
-          <Section>
+          <Section delay={0.4}>
             <Heading>Other</Heading>
             <div className="grid grid-cols-5 gap-4 items-center justify-center">
               <Icon icon={GitLogo}>Git</Icon>
@@ -71,7 +71,7 @@ const Skills = () => {
           </Section>
         </div>
       </Section>
-    </Article>
+    </Layout>
   )
 }
 
