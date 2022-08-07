@@ -8,13 +8,15 @@ const Theme = () => {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined') {
       const currentTheme = localStorage.getItem('theme')
-      if (currentTheme) return currentTheme
-    } else return 'light'
+      if (currentTheme) {
+        return currentTheme
+      } else return 'light'
+    }
   })
 
   useEffect(() => {
     localStorage.theme = theme
-    const body = document.getElementsByTagName('body')[0]
+    const body = document.getElementsByTagName('BODY')[0]
     body.setAttribute('class', localStorage.theme)
   }, [theme])
 
