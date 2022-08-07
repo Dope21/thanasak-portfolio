@@ -27,7 +27,7 @@ const Theme = () => {
       className="theme-button-color inline-flex relative items-center cursor-pointer select-none w-[70px] h-[38px] rounded-full"
       onClick={handleTheme}
     >
-      <div className="absolute h-[34px] w-[34px] bg-white rounded-full top-[2px] left-[2px] transition-all flex items-center justify-center translate-x-0 dark:translate-x-[95%]">
+      <div className="absolute h-[34px] w-[34px] bg-white rounded-full top-[2px] left-[2px] transition-all flex items-center justify-center dark:translate-x-[95%]">
         <Image
           width={16}
           height={16}
