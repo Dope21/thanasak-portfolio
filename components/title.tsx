@@ -4,6 +4,6 @@ export const Title = ({ children }) => {
 
 export const Heading = ({ children }) => {
   return (
-    <h4 className="pl-7 text-xl font-bold mb-4 main-text-color">{children}</h4>
+    <h4 className="pl-5 text-xl font-bold mb-4 main-text-color">{children}</h4>
   )
 }
