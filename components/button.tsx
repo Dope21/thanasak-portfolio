@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { AiOutlineGithub } from 'react-icons/ai'
 
-export const MainBtn = ({ children, icon, href }) => {
+export const MainBtn = ({ children, icon = '', href }) => {
   return (
     <Link href={href}>
       <a className="bg-black text-white inline-flex items-center px-4 py-2 border border-black rounded-md gap-1 tracking-wide dark:text-black dark:bg-white dark:border-white">
@@ -12,7 +12,7 @@ export const MainBtn = ({ children, icon, href }) => {
   )
 }
 
-export const BlackBtn = ({ children, icon, href }) => {
+export const BlackBtn = ({ children, icon = '', href }) => {
   return (
     <Link href={href}>
       <a className="bg-black text-white inline-flex items-center px-4 py-2 border border-black rounded-md gap-1 tracking-wide">
@@ -23,7 +23,7 @@ export const BlackBtn = ({ children, icon, href }) => {
   )
 }
 
-export const OutlineBtn = ({ children, icon, href }) => {
+export const OutlineBtn = ({ children, icon = '', href }) => {
   return (
     <Link href={href}>
       <a className="text-zinc-500 inline-flex items-center px-4 py-2 border border-zinc-500 rounded-md gap-1 tracking-wide dark:text-black dark:bg-white dark:border-white">
