@@ -7,11 +7,15 @@ import moonIcon from '../public/images/icons/moon.png'
 const Theme = () => {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined') {
-      const currentTheme = localStorage.getItem('theme')
-      if (currentTheme) {
-        return currentTheme
-      } else return 'light'
-    } else 'light'
+      const saveTheme = localStorage.getItem('theme')
+      if (saveTheme) {
+        return saveTheme
+      } else {
+        return 'light'
+      }
+    } else {
+      return 'light'
+    }
   })
 
   useEffect(() => {
