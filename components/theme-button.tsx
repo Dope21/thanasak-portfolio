@@ -20,8 +20,9 @@ const Theme = () => {
 
   useEffect(() => {
     localStorage.theme = theme
-    const body = document.getElementsByTagName('BODY')[0]
-    body.setAttribute('class', localStorage.theme)
+    const bg = document.querySelector('html')
+    bg.classList.add(localStorage.theme)
+    bg.classList.remove(localStorage.theme == 'light' ? 'dark' : 'light')
   }, [theme])
 
   const handleTheme = () => {
