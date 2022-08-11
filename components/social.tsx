@@ -5,7 +5,7 @@ const Social = ({ children, href, icon }) => {
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="social-color px-6 py-2 inline-flex items-center gap-3 rounded-md transition-all"
+        className="social-color p-2 inline-flex items-center gap-3 rounded-md transition-all"
       >
         {icon}
         {children}
