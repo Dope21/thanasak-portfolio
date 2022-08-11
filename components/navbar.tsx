@@ -29,7 +29,15 @@ const Navbar = ({ path }) => {
   }
 
   const subMenuAnimate = {
-    close: { scale: 0, opacity: 0, y: -100, x: 100 },
+    close: {
+      scale: 0.5,
+      opacity: 0,
+      y: -40,
+      x: 55,
+      transitionEnd: {
+        display: 'none',
+      },
+    },
     open: { scale: 1, opacity: 1, y: 0, x: 0 },
   }
 
