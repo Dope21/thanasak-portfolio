@@ -20,7 +20,7 @@ const Project = () => {
         </Section>
 
         <Section delay={0.3}>
-          <div className="flex flex-col gap-1">
+          <div className="text-sm sm:text-base flex flex-col sm:gap-1">
             <div className="flex items-center">
               <Badge>Stack</Badge>
               <p className="sub-text-color">
@@ -41,7 +41,7 @@ const Project = () => {
             <div className="flex items-center">
               <Badge>live</Badge>
               <a
-                className="link-color"
+                className="link-color text-sm"
                 href="https://weather-app-three-theta.vercel.app/"
                 target="_blank"
                 rel="noreferrer"

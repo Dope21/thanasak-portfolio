@@ -20,7 +20,7 @@ const Project = () => {
         </Section>
 
         <Section delay={0.3}>
-          <div className="text-sm sm:text-base flex flex-col gap-1">
+          <div className="text-sm sm:text-base flex flex-col sm:gap-1">
             <div className="flex items-center">
               <Badge>Stack</Badge>
               <p className="sub-text-color ">
