@@ -38,7 +38,13 @@ const Navbar = ({ path }) => {
         display: 'none',
       },
     },
-    open: { scale: 1, opacity: 1, y: 0, x: 0 },
+    open: {
+      display: 'block',
+      scale: 1,
+      opacity: 1,
+      y: 0,
+      x: 0,
+    },
   }
 
   const subMenuSpring = { type: 'spring', damping: 25, stiffness: 500 }
