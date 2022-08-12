@@ -1,15 +1,16 @@
 import Link from 'next/link'
 import Theme from './theme-button'
 import { AiOutlineMenu } from 'react-icons/ai'
-import { useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import Logo from './logo'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 
 const NavLink = ({ href, children, path }) => {
   const active = path === href
   return (
     <li>
-      <Link href={href}>
+      <Link href={href} passHref>
         <a
           className={`main-text-color p-2 rounded-md cursor-pointer hover:underline hover:underline-offset-2
           ${active ? 'bg-teal-400 dark:bg-red-400' : ''}`}
@@ -23,10 +24,22 @@ const NavLink = ({ href, children, path }) => {
 
 const Navbar = ({ path }) => {
   const [menu, setMenu] = useState(false)
+  const { events } = useRouter()
 
   const handleSubmenu = () => {
     setMenu(!menu)
   }
+
+  const handleSubLink = useCallback(() => {
+    setMenu(false)
+  }, [])
+
+  useEffect(() => {
+    events.on('routeChangeStart', handleSubLink)
+    return () => {
+      events.off('routeChangeStart', handleSubLink)
+    }
+  }, [handleSubLink, events])
 
   const subMenuAnimate = {
     close: {
