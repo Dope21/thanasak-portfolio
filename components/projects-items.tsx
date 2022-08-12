@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { BlackBtn } from './button'
+import { MainBtn } from './button'
 import { AiOutlineRight } from 'react-icons/ai'
 
 export const BlogItem = ({ src, alt, title, desc, href }) => {
@@ -15,9 +15,9 @@ export const BlogItem = ({ src, alt, title, desc, href }) => {
           {title}
         </h4>
         <p className="sub-text-color mb-4">{desc}</p>
-        <BlackBtn icon={<AiOutlineRight size={18} />} href={href}>
+        <MainBtn icon={<AiOutlineRight size={18} />} href={href}>
           View project
-        </BlackBtn>
+        </MainBtn>
       </div>
     </div>
   )
