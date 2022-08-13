@@ -68,7 +68,7 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit}>
       {status.info.error && (
         <p
-          className="text-red-500 border-red-500 text-center text-lg px-4 py-3 rounded-lg relative border-2"
+          className="text-red-500 border-red-500 text-center text-lg px-4 py-3 rounded-lg relative border-1"
           role="alert"
         >
           {status.info.msg}
@@ -78,11 +78,10 @@ const ContactForm = () => {
       <div className="flex flex-col gap-5">
         {status.submitted ? (
           <p
-            className="sub-text-color text-center text-lg px-4 py-3 rounded-lg relative border-2"
+            className="sub-text-color text-center text-lg px-4 py-3 rounded-lg relative border border-zinc-300 dark:border-gray-500"
             role="alert"
           >
-            Your message has been successfully sent. I will contact you very
-            soon!
+            Thank for your message. I will contact you very soon!
           </p>
         ) : (
           <>
