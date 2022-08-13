@@ -12,8 +12,12 @@ const NavLink = ({ href, children, path }) => {
     <li>
       <Link href={href} passHref>
         <a
-          className={`main-text-color p-2 rounded-md cursor-pointer hover:underline hover:underline-offset-2
-          ${active ? 'bg-teal-400 dark:bg-red-400' : ''}`}
+          className={`navlink-color p-2 rounded-md cursor-pointer transition-all
+          ${
+            active
+              ? 'text-black dark:text-white underline underline-offset-[20px]'
+              : ''
+          }`}
         >
           {children}
         </a>
@@ -43,10 +47,9 @@ const Navbar = ({ path }) => {
 
   const subMenuAnimate = {
     close: {
-      scale: 0.5,
+      scale: 1,
       opacity: 0,
-      y: -40,
-      x: 55,
+      y: -30,
       transitionEnd: {
         display: 'none',
       },
@@ -56,7 +59,6 @@ const Navbar = ({ path }) => {
       scale: 1,
       opacity: 1,
       y: 0,
-      x: 0,
     },
   }
 
