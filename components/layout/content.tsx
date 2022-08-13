@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   }
   return (
     <motion.article
-      className="pt-4"
+      className="pt-6 sm:pt-10"
       variants={variants}
       initial="hidden"
       animate="enter"
