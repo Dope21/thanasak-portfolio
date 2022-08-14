@@ -81,7 +81,7 @@ const ContactForm = () => {
             className="sub-text-color text-center text-lg px-4 py-3 rounded-lg relative border border-zinc-300 dark:border-gray-500"
             role="alert"
           >
-            Thank for your message. I will contact you very soon!
+            Thanks for your message. I will contact you very soon!
           </p>
         ) : (
           <>
