@@ -14,7 +14,7 @@ const Meta = () => {
       <meta property="og:url" content="https://www.thanasak.vercel.app" />
       <meta
         property="og:image"
-        content="https://www.thanasak.vercel.app/public/thumbnail.png"
+        content="https://thanasak-homepage.vercel.app/images/thumbnail.png"
       />
       <title>Thanasak Limsila</title>
     </Head>
