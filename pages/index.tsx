@@ -20,7 +20,8 @@ const Home = () => {
 
             <div className="flex items-center justify-center gap-3 mt-6 md:mt-9">
               <GithubBtn />
-              <MainBtn href="/projects" icon={<FaFolderOpen size={20} />}>
+              <MainBtn href="/projects">
+                <FaFolderOpen size={20} />
                 Projects
               </MainBtn>
             </div>
@@ -39,7 +40,8 @@ const Home = () => {
             </strong>
           </p>
           <div className="flex justify-center mt-6">
-            <MainBtn href="/contact" icon={<FaTelegramPlane size={20} />}>
+            <MainBtn href="/contact">
+              <FaTelegramPlane size={20} />
               Contact
             </MainBtn>
           </div>

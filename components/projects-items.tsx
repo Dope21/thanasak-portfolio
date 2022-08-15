@@ -15,8 +15,9 @@ export const BlogItem = ({ src, alt, title, desc, href }) => {
           {title}
         </h4>
         <p className="sub-text-color mb-4">{desc}</p>
-        <MainBtn icon={<AiOutlineRight size={18} />} href={href}>
+        <MainBtn href={href}>
           View project
+          <AiOutlineRight size={18} />
         </MainBtn>
       </div>
     </div>

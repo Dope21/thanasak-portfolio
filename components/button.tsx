@@ -1,31 +1,25 @@
 import Link from 'next/link'
 import { AiOutlineGithub } from 'react-icons/ai'
 
-export const MainBtn = ({ children, icon, href }) => {
+export const MainBtn = ({ children, href }) => {
   return (
     <Link href={href}>
-      <a className="button button-color-main">
-        {icon}
-        {children}
-      </a>
+      <a className="button button-color-main">{children}</a>
     </Link>
   )
 }
 
-export const OutlineBtn = ({ children, icon, href }) => {
+export const OutlineBtn = ({ children, href }) => {
   return (
     <Link href={href}>
-      <a className="button button-color-outline">
-        {icon}
-        {children}
-      </a>
+      <a className="button button-color-outline">{children}</a>
     </Link>
   )
 }
 
 export const SubmitBtn = ({ children }) => {
   return (
-    <button type="submit" className="button button-color-outline">
+    <button type="submit" className="button button-color-main">
       {children}
     </button>
   )
