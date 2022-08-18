@@ -41,7 +41,7 @@ const Project = () => {
             <div className="flex items-center">
               <Badge>live</Badge>
               <a
-                className="link-color text-sm"
+                className="link-color"
                 href="https://weather-app-three-theta.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
