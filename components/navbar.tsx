@@ -98,24 +98,16 @@ const Navbar = ({ path }) => {
             >
               <div className="h-full flex flex-col text-zinc-500 ">
                 <Link href="/">
-                  <a className="py-2 px-5 sub-text-color hover:main-text-color">
-                    Home
-                  </a>
+                  <a className="py-2 px-5 navlink-color">Home</a>
                 </Link>
                 <Link href="/projects">
-                  <a className="py-2 px-5 sub-text-color hover:main-text-color">
-                    Projects
-                  </a>
+                  <a className="py-2 px-5 navlink-color">Projects</a>
                 </Link>
                 <Link href="/skills">
-                  <a className="py-2 px-5 sub-text-color hover:main-text-color">
-                    Skills
-                  </a>
+                  <a className="py-2 px-5 navlink-color">Skills</a>
                 </Link>
                 <Link href="/contact">
-                  <a className="py-2 px-5 sub-text-color hover:main-text-color">
-                    Contact
-                  </a>
+                  <a className="py-2 px-5 navlink-color">Contact</a>
                 </Link>
               </div>
             </motion.div>
