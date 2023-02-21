@@ -19,6 +19,13 @@ const Projects = () => {
         <Section delay={0.2}>
           <BlogItem
             src={weather}
+            alt="amsa-th"
+            title="AMSA Thailand Website"
+            desc=".............................................."
+            href="/projects/amsa"
+          />
+          <BlogItem
+            src={weather}
             alt="weather-app"
             title="Weather Report App"
             desc="A weather report app from OpenWeatherMap API. Support Server Side Rendering, Searchbox Suggestion, and Smooth fade in animation."
