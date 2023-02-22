@@ -19,20 +19,6 @@ const Projects = () => {
 
         <Section delay={0.2}>
           <BlogItem
-            src={coming_soon}
-            alt="amsa-th"
-            title="AMSA Thailand's Website"
-            desc="An official website of Asian Medical Student's Association of Thailand"
-            href="/projects/amsa"
-          />
-          <BlogItem
-            src={coming_soon}
-            alt="django"
-            title="Django Rest API"
-            desc="A Django Rest API for e-commerce website."
-            href="/projects/django"
-          />
-          <BlogItem
             src={weather}
             alt="weather-app"
             title="Weather Report App"
@@ -73,6 +59,20 @@ const Projects = () => {
             title="React Landing page"
             desc="A react responsive website with tailwind CSS."
             href="/projects/cloud"
+          />
+          <BlogItem
+            src={coming_soon}
+            alt="amsa-th"
+            title="AMSA Thailand's Website"
+            desc="An official website of Asian Medical Student's Association of Thailand"
+            href="/projects/amsa"
+          />
+          <BlogItem
+            src={coming_soon}
+            alt="django"
+            title="Django Rest API"
+            desc="A Django Rest API for e-commerce website."
+            href="/projects/django"
           />
         </Section>
       </Section>
