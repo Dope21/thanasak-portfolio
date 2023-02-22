@@ -9,6 +9,7 @@ import ecom from '../public/images/projects/ecom_eyecatching.png'
 import pos from '../public/images/projects/pos_eyecatching.png'
 import cloud from '../public/images/projects/cloud_eyecatching.png'
 import creative from '../public/images/projects/creative_eyecatching.png'
+import coming_soon from '../public/images/projects/coming_soon_eyecatching.png'
 
 const Projects = () => {
   return (
@@ -58,6 +59,20 @@ const Projects = () => {
             title="React Landing page"
             desc="A react responsive website with tailwind CSS."
             href="/projects/cloud"
+          />
+          <BlogItem
+            src={coming_soon}
+            alt="amsa-th"
+            title="AMSA Thailand's Website"
+            desc="An official website of Asian Medical Student's Association of Thailand"
+            href="/projects/amsa"
+          />
+          <BlogItem
+            src={coming_soon}
+            alt="django"
+            title="Django Rest API"
+            desc="A Django Rest API for e-commerce website."
+            href="/projects/django"
           />
         </Section>
       </Section>
