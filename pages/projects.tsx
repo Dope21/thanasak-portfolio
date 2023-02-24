@@ -9,15 +9,32 @@ import ecom from '../public/images/projects/ecom_eyecatching.png'
 import pos from '../public/images/projects/pos_eyecatching.png'
 import cloud from '../public/images/projects/cloud_eyecatching.png'
 import creative from '../public/images/projects/creative_eyecatching.png'
-import coming_soon from '../public/images/projects/coming_soon_eyecatching.png'
+import django from '../public/images/projects/django_eyecatching.png'
+import amsa from '../public/images/projects/amsa_eyecatching.png'
 
 const Projects = () => {
   return (
     <Layout>
       <Section>
-        <Title>Some projecsts I&apos;ve done!</Title>
-
+        <Title>Currently working on ...</Title>
         <Section delay={0.2}>
+          <BlogItem
+            src={amsa}
+            alt="amsa-th"
+            title="AMSA Thailand's Website"
+            desc="An official website of Asian Medical Student's Association of Thailand"
+            href="/projects/amsa"
+          />
+          <BlogItem
+            src={django}
+            alt="django"
+            title="Django Rest API"
+            desc="A Django REST API for e-commerce website with PosgreSQL for databases."
+            href="/projects/django"
+          />
+        </Section>
+        <Title> Some projecsts I&apos;ve done!</Title>
+        <Section delay={0.3}>
           <BlogItem
             src={weather}
             alt="weather-app"
@@ -59,20 +76,6 @@ const Projects = () => {
             title="React Landing page"
             desc="A react responsive website with tailwind CSS."
             href="/projects/cloud"
-          />
-          <BlogItem
-            src={coming_soon}
-            alt="amsa-th"
-            title="AMSA Thailand's Website"
-            desc="An official website of Asian Medical Student's Association of Thailand"
-            href="/projects/amsa"
-          />
-          <BlogItem
-            src={coming_soon}
-            alt="django"
-            title="Django Rest API"
-            desc="A Django Rest API for e-commerce website."
-            href="/projects/django"
           />
         </Section>
       </Section>
