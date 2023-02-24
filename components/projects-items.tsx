@@ -24,7 +24,7 @@ export const BlogItem = ({ src, alt, title, desc, href }) => {
   )
 }
 
-export const Title = ({ children }) => {
+export const Title = ({ children, badge }) => {
   return (
     <div className="flex items-center mb-5">
       <Link href="/projects">
@@ -33,7 +33,7 @@ export const Title = ({ children }) => {
         </a>
       </Link>
       <h3 className="text-xl font-bold main-text-color">{children}</h3>
-      <Badge>2022</Badge>
+      <Badge>{badge}</Badge>
     </div>
   )
 }
