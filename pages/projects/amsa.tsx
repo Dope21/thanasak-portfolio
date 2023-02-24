@@ -17,10 +17,10 @@ const Project = () => {
             for public relations and event registration.
           </p>
           <p className="sub-text-color mt-5">
-            My primary responsibility was to create a REST API integrated with
-            MongoDB, which provided functionalities for managing events and user
-            information, implementing authentication and authorization mechanism
-            to ensure data security on the website.
+            As a backend developer, my primary responsibility is to create a
+            REST API integrated with MongoDB, which provided functionalities for
+            managing events and user information, implementing authentication
+            and authorization mechanism to ensure data security on the website.
           </p>
         </Section>
 
