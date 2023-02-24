@@ -10,7 +10,7 @@ const Project = () => {
   return (
     <Layout>
       <Section>
-        <Title>Restaurant Website</Title>
+        <Title badge="2022">Restaurant Website</Title>
 
         <Section delay={0.2}>
           <p className="sub-text-color">

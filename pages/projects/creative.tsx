@@ -10,7 +10,7 @@ const Project = () => {
   return (
     <Layout>
       <Section>
-        <Title>Creative Agency</Title>
+        <Title badge="2022">Creative Agency</Title>
 
         <Section delay={0.2}>
           <p className="sub-text-color">
