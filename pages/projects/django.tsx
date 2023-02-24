@@ -12,10 +12,9 @@ const Project = () => {
 
         <Section delay={0.2}>
           <p className="sub-text-color">
-            After learning Python for a while, I decided to combine this
-            skillwith my proficiency in web development. That is why I plan to
-            use Django, a Python framework for building websites, to create an
-            API.
+            After learning Python for a while, I decided to combine this skill
+            with my proficiency in web development. That is why I plan to use
+            Django, a Python framework for building websites, to create an API.
           </p>
           <p className="sub-text-color mt-3 sm:pr-9">
             My goal is to create a REST API for the e-commerce website that is
