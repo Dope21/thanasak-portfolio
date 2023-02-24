@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <Layout>
       <Section>
-        <Title>Currently working on ...</Title>
+        <Title>Currently working on!</Title>
         <Section delay={0.2}>
           <BlogItem
             src={amsa}
@@ -28,12 +28,12 @@ const Projects = () => {
           <BlogItem
             src={django}
             alt="django"
-            title="Django Rest API"
+            title="Django REST API"
             desc="A Django REST API for e-commerce website with PosgreSQL for databases."
             href="/projects/django"
           />
         </Section>
-        <Title> Some projecsts I&apos;ve done!</Title>
+        <Title> Other projecsts I&apos;ve done!</Title>
         <Section delay={0.3}>
           <BlogItem
             src={weather}
