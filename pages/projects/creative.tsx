@@ -14,7 +14,8 @@ const Project = () => {
 
         <Section delay={0.2}>
           <p className="sub-text-color">
-            A Bootstrap responsive landing page with Semantic HTML
+            A Bootstrap responsive landing page with Semantic HTML and little
+            animation with jQuery.
           </p>
         </Section>
 

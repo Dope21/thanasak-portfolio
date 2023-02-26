@@ -14,8 +14,9 @@ const Project = () => {
 
         <Section delay={0.2}>
           <p className="sub-text-color">
-            A weather report app from OpenWeatherMap API. Support Server Side
-            Rendering, Searchbox Suggestion, and Smooth fade in animation.
+            A weather report web application that supports Server-Side
+            Rendering, a Search box with autocomplete suggestions, and features
+            a smooth fade-in animation.
           </p>
         </Section>
 

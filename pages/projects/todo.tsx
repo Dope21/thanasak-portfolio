@@ -10,12 +10,17 @@ const Project = () => {
   return (
     <Layout>
       <Section>
-        <Title badge="2022">ToDo App</Title>
+        <Title badge="2022">Todo App</Title>
 
         <Section delay={0.2}>
           <p className="sub-text-color">
-            A React Todo application, allow user to create and delete task. This
-            project also support Dark/Light theme and user authentication.
+            A React Todo application that allows users to create and delete
+            tasks. It features support for Dark/Light themes and user
+            authentication using a Node.js API with MySQL.{' '}
+            <strong className="text-black dark:text-white">
+              Since Heroku is not free now API fuctionality include login or
+              register will not working.
+            </strong>
           </p>
         </Section>
 

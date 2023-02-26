@@ -1,6 +1,7 @@
 import Layout from '../../components/layout/content'
 import Section from '../../components/section'
 import { Title, Badge, WorkImage } from '../../components/projects-items'
+import Link from 'next/link'
 
 import image_1 from '../../public/images/projects/ecom_01.png'
 import image_2 from '../../public/images/projects/ecom_02.png'
@@ -14,8 +15,13 @@ const Project = () => {
 
         <Section delay={0.2}>
           <p className="sub-text-color">
-            An E-commerce website for a restaurant. Users can register and login
-            to order food online through this website.
+            An e-commerce website for a restaurant. Allow customers to create
+            their accounts, browse the menu and order food online. This website
+            also come with{' '}
+            <Link href="/projects/pos">
+              <a className="link-color">a POS web application </a>
+            </Link>{' '}
+            for management.
           </p>
         </Section>
 

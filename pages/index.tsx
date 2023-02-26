@@ -31,12 +31,12 @@ const Home = () => {
         <Section delay={0.3}>
           <Title>About Me</Title>
           <p className="sub-text-color tracking-wider">
-            I&apos;m currnetly studying in Bachelor degree of Computer
-            Engineering. Due to being a college student, I&apos;m not available
+            I&apos;m currently studying for a bachelor&apos;s degree in computer
+            engineering. Due to being a college student, I&apos;m not available
             for a full-time job right now.{' '}
             <strong className="main-text-color">
-              I&apos;m however interested in freelance projects, part-time job,
-              and internship opportunities.
+              However, I&apos;m interested in freelance projects, part-time
+              jobs, and internship opportunities.
             </strong>
           </p>
           <div className="flex justify-center mt-6">
