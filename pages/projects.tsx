@@ -7,7 +7,6 @@ import weather from '../public/images/projects/weather_eyecatching.png'
 import todo from '../public/images/projects/todo_eyecatching.png'
 import ecom from '../public/images/projects/ecom_eyecatching.png'
 import pos from '../public/images/projects/pos_eyecatching.png'
-import cloud from '../public/images/projects/cloud_eyecatching.png'
 import creative from '../public/images/projects/creative_eyecatching.png'
 import django from '../public/images/projects/django_eyecatching.png'
 import amsa from '../public/images/projects/amsa_eyecatching.png'
@@ -69,13 +68,6 @@ const Projects = () => {
             title="Bootstrap 5 Landing page"
             desc="A Bootstrap responsive landing page with Semantic HTML and little animation with jQuery."
             href="/projects/creative"
-          />
-          <BlogItem
-            src={cloud}
-            alt="react-landing-page"
-            title="React Landing page"
-            desc="A react responsive website with tailwind CSS."
-            href="/projects/cloud"
           />
         </Section>
       </Section>
