@@ -1,29 +1,35 @@
 import Layout from '../components/layout/content'
 import Section from '../components/section'
-import { Heading, Title } from '../components/title'
-import Image from 'next/image'
+import { Title } from '../components/title'
+import SkillBanner from '../components/skill-banner'
+import {
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiMongodb,
+  SiTailwindcss,
+  SiVite,
+  SiBootstrap,
+  SiJquery,
+  SiDjango,
+  SiPython,
+  SiPhp,
+  SiMysql,
+  SiPostgresql,
+  SiAdobephotoshop,
+  SiFigma,
+  SiAdobexd,
+  SiGit,
+  SiVim,
+} from 'react-icons/si'
+import { BsFiletypeScss } from 'react-icons/bs'
 
-import TsLogo from '../public/images/skills/ts.png'
-import NextLogo from '../public/images/skills/next.png'
-import TailwindLogo from '../public/images/skills/tailwind.png'
-import ChakraLogo from '../public/images/skills/chakra.png'
-import B5Logo from '../public/images/skills/b5.png'
-import SassLogo from '../public/images/skills/sass.png'
-import JqLogo from '../public/images/skills/jq.png'
-import PhpLogo from '../public/images/skills/php.png'
-import NodeLogo from '../public/images/skills/node.png'
-import MysqlLogo from '../public/images/skills/mysql.png'
-import PsLogo from '../public/images/skills/ps.png'
-import FigmaLogo from '../public/images/skills/figma.png'
-import GitLogo from '../public/images/skills/git.png'
-
-const Icon = ({ children, icon }) => {
+const Icon = ({ icon, name }) => {
   return (
-    <div className="flex items-center justify-center flex-col">
-      <div className="relative min-w-[50px] min-h-[50px]">
-        <Image src={icon} layout="fill" objectFit="contain" alt="skill-icon" />
-      </div>
-      <p className="mt-2 text-center sub-text-color">{children}</p>
+    <div className="flex flex-col items-center">
+      <span className="main-text-color">{icon}</span>
+      <p className="text-sm mt-2 main-text-color">{name}</p>
     </div>
   )
 }
@@ -36,34 +42,43 @@ const Skills = () => {
 
         <div className="mt-10">
           <Section delay={0.2}>
-            <Heading>Front-End</Heading>
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 items-center justify-center">
-              <Icon icon={TsLogo}>TypeScript</Icon>
-              <Icon icon={NextLogo}>Next.js</Icon>
-              <Icon icon={TailwindLogo}>Tailwind</Icon>
-              <Icon icon={ChakraLogo}>Chakra UI</Icon>
-              <Icon icon={B5Logo}>Bootstrap 5</Icon>
-              <Icon icon={SassLogo}>Sass/SCSS</Icon>
-              <Icon icon={JqLogo}>jQuery</Icon>
-            </div>
+            <SkillBanner title="Main Stack" main={true}>
+              <Icon icon={<SiTypescript size={30} />} name="TypeScript" />
+              <Icon icon={<SiReact size={30} />} name="React" />
+              <Icon icon={<SiNextdotjs size={30} />} name="Next" />
+              <Icon icon={<SiNodedotjs size={30} />} name="Node" />
+              <Icon icon={<SiMongodb size={30} />} name="MongoDB" />
+              <Icon icon={<SiTailwindcss size={30} />} name="Tailwind" />
+            </SkillBanner>
           </Section>
 
           <Section delay={0.3}>
-            <Heading>Back-End</Heading>
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 items-center justify-center">
-              <Icon icon={NodeLogo}>Node.js</Icon>
-              <Icon icon={PhpLogo}>PHP</Icon>
-              <Icon icon={MysqlLogo}>MySQL</Icon>
-            </div>
+            <SkillBanner title="Front-End">
+              <Icon icon={<SiVite size={30} />} name="Vite" />
+              <Icon icon={<SiBootstrap size={30} />} name="Bootstrap" />
+              <Icon icon={<SiJquery size={30} />} name="Jquery" />
+              <Icon icon={<BsFiletypeScss size={30} />} name="SCSS" />
+            </SkillBanner>
           </Section>
 
           <Section delay={0.4}>
-            <Heading>Other</Heading>
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 items-center justify-center">
-              <Icon icon={GitLogo}>Git</Icon>
-              <Icon icon={FigmaLogo}>Figma</Icon>
-              <Icon icon={PsLogo}>Photoshop</Icon>
-            </div>
+            <SkillBanner title="Back-End">
+              <Icon icon={<SiPython size={30} />} name="Python" />
+              <Icon icon={<SiDjango size={30} />} name="Django" />
+              <Icon icon={<SiPhp size={30} />} name="PHP" />
+              <Icon icon={<SiMysql size={30} />} name="MySQL" />
+              <Icon icon={<SiPostgresql size={30} />} name="PostgreSQL" />
+            </SkillBanner>
+          </Section>
+
+          <Section delay={0.5}>
+            <SkillBanner title="Other">
+              <Icon icon={<SiGit size={30} />} name="Git" />
+              <Icon icon={<SiAdobephotoshop size={30} />} name="Photoshop" />
+              <Icon icon={<SiAdobexd size={30} />} name="XD" />
+              <Icon icon={<SiFigma size={30} />} name="Figma" />
+              <Icon icon={<SiVim size={30} />} name="Vim" />
+            </SkillBanner>
           </Section>
         </div>
       </Section>
