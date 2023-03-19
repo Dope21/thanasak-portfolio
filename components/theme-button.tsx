@@ -2,28 +2,23 @@ import { useEffect, useState } from 'react'
 import { BsMoonStarsFill, BsSunFill } from 'react-icons/bs'
 
 const Theme = () => {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const saveTheme = localStorage.getItem('theme')
-      if (saveTheme) {
-        return saveTheme
-      } else {
-        return 'light'
-      }
-    } else {
-      return 'light'
-    }
-  })
+  const [theme, setTheme] = useState('light')
 
   useEffect(() => {
-    localStorage.theme = theme
     const bg = document.querySelector('html')
     bg.classList.add(localStorage.theme)
-    bg.classList.remove(localStorage.theme == 'light' ? 'dark' : 'light')
-  }, [theme])
+    bg.classList.remove(localStorage.theme === 'light' ? 'dark' : 'light')
+    setTheme(localStorage.theme)
+  }, [])
 
   const handleTheme = () => {
-    setTheme(theme => (theme === 'light' ? 'dark' : 'light'))
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+    localStorage.setItem('theme', newTheme)
+
+    const bg = document.querySelector('html')
+    bg.classList.add(newTheme)
+    bg.classList.remove(newTheme === 'light' ? 'dark' : 'light')
   }
 
   return (
