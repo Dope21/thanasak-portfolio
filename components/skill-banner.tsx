@@ -15,10 +15,10 @@ export const SkillBanner = ({ children, title, main = false }) => {
   )
 }
 
-export const Icon = ({ icon, name }) => {
+export const Icon = ({ icon, name, color }) => {
   return (
     <div className="flex flex-col items-center">
-      <span className="main-text-color">{icon}</span>
+      <span className={color}>{icon}</span>
       <p className="text-sm mt-2 main-text-color">{name}</p>
     </div>
   )
