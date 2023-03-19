@@ -1,7 +1,7 @@
 import Layout from '../components/layout/content'
 import Section from '../components/section'
 import { Title } from '../components/title'
-import SkillBanner from '../components/skill-banner'
+import { SkillBanner, Icon } from '../components/skill-banner'
 import {
   SiTypescript,
   SiReact,
@@ -24,15 +24,6 @@ import {
   SiVim,
 } from 'react-icons/si'
 import { BsFiletypeScss } from 'react-icons/bs'
-
-const Icon = ({ icon, name }) => {
-  return (
-    <div className="flex flex-col items-center">
-      <span className="main-text-color">{icon}</span>
-      <p className="text-sm mt-2 main-text-color">{name}</p>
-    </div>
-  )
-}
 
 const Skills = () => {
   return (
