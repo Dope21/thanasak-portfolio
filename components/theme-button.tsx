@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
-
-import sunIcon from '../public/images/icons/sun.png'
-import moonIcon from '../public/images/icons/moon.png'
+import { BsMoonStarsFill, BsSunFill } from 'react-icons/bs'
 
 const Theme = () => {
   const [theme, setTheme] = useState(() => {
@@ -35,12 +32,9 @@ const Theme = () => {
       onClick={handleTheme}
     >
       <div className="absolute h-[34px] w-[34px] bg-white rounded-full top-[2px] left-[2px] transition-all flex items-center justify-center dark:translate-x-[95%]">
-        <Image
-          width={16}
-          height={16}
-          src={theme === 'light' ? sunIcon : moonIcon}
-          alt="theme-icon"
-        />
+        <span className="text-blue-500 dark:text-yellow-500">
+          {theme === 'light' ? <BsSunFill /> : <BsMoonStarsFill />}
+        </span>
       </div>
     </div>
   )
