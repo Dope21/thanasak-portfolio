@@ -8,7 +8,6 @@ import todo from '../public/images/projects/todo_eyecatching.png'
 import ecom from '../public/images/projects/ecom_eyecatching.png'
 import pos from '../public/images/projects/pos_eyecatching.png'
 import creative from '../public/images/projects/creative_eyecatching.png'
-import django from '../public/images/projects/django_eyecatching.png'
 import amsa from '../public/images/projects/amsa_eyecatching.png'
 
 const Projects = () => {
@@ -23,13 +22,6 @@ const Projects = () => {
             title="AMSA Thailand's Website"
             desc="The official website of the Asian Medical Student's Association of Thailand."
             href="/projects/amsa"
-          />
-          <BlogItem
-            src={django}
-            alt="django"
-            title="Django REST API"
-            desc="A REST API using Django, a Python web framework with PostgreSQL for an e-commerce website."
-            href="/projects/django"
           />
         </Section>
         <Title> Other projects I&apos;ve done !</Title>
