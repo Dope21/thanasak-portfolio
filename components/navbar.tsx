@@ -13,11 +13,10 @@ const NavLink = ({ href, children, path }) => {
       <Link href={href} passHref>
         <a
           className={`navlink-color p-2 rounded-md cursor-pointer transition-all
-          ${
-            active
+          ${active
               ? 'text-black dark:text-white underline underline-offset-[20px]'
               : ''
-          }`}
+            }`}
         >
           {children}
         </a>
@@ -73,9 +72,6 @@ const Navbar = ({ path }) => {
             <NavLink path={path} href="/projects">
               Projects
             </NavLink>
-            <NavLink path={path} href="/skills">
-              Skills
-            </NavLink>
             <NavLink path={path} href="/contact">
               Contact
             </NavLink>
@@ -102,9 +98,6 @@ const Navbar = ({ path }) => {
                 </Link>
                 <Link href="/projects">
                   <a className="py-2 px-5 navlink-color">Projects</a>
-                </Link>
-                <Link href="/skills">
-                  <a className="py-2 px-5 navlink-color">Skills</a>
                 </Link>
                 <Link href="/contact">
                   <a className="py-2 px-5 navlink-color">Contact</a>
