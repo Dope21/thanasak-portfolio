@@ -1,7 +1,7 @@
-import { Title } from '../components/title'
 import Layout from '../components/layout/content'
-import { BlogItem } from '../components/projects-items'
 import Section from '../components/section'
+import { Title } from '../components/title'
+import { BlogItem } from '../components/projects-items'
 
 import weather from '../public/images/projects/weather_eyecatching.png'
 import todo from '../public/images/projects/todo_eyecatching.png'
@@ -14,18 +14,15 @@ const Projects = () => {
   return (
     <Layout>
       <Section>
-        <Title>Currently developing !</Title>
+        <Title> Some projects I&apos;ve done !</Title>
         <Section delay={0.2}>
           <BlogItem
             src={amsa}
             alt="amsa-th"
             title="AMSA Thailand's Website"
-            desc="The official website of the Asian Medical Student's Association of Thailand."
+            desc="An official website for The Asian Medical Student's Association of Thailand."
             href="/projects/amsa"
           />
-        </Section>
-        <Title> Other projects I&apos;ve done !</Title>
-        <Section delay={0.3}>
           <BlogItem
             src={weather}
             alt="weather-app"
