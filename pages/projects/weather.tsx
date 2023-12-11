@@ -23,10 +23,15 @@ const Project = () => {
         <Section delay={0.3}>
           <div className="text-sm sm:text-base flex flex-col sm:gap-1">
             <div className="flex items-center">
-              <Badge>Stack</Badge>
-              <p className="sub-text-color">
-                Next.js, Tailwind, OpenWeatherMap API
-              </p>
+              <Badge>website</Badge>
+              <a
+                className="link-color"
+                href="https://weather-app-three-theta.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                https://weather-app-three-theta.vercel.app/
+              </a>
             </div>
             <div className="flex items-center">
               <Badge>Source</Badge>
@@ -40,15 +45,10 @@ const Project = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <Badge>live</Badge>
-              <a
-                className="link-color"
-                href="https://weather-app-three-theta.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://weather-app-three-theta.vercel.app/
-              </a>
+              <Badge>Stack</Badge>
+              <p className="sub-text-color">
+                Next.js, Tailwind, OpenWeatherMap API
+              </p>
             </div>
           </div>
         </Section>

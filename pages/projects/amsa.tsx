@@ -21,7 +21,8 @@ const Project = () => {
             As a backend developer, my primary responsibility is to create a
             REST API integrated with MongoDB, which provided functionalities for
             managing Events and User information, implementing authentication
-            and authorization mechanism to ensure data security on the website.
+            and authorization mechanism to ensure data security on both the main
+            website and admin management pages.
           </p>
         </Section>
 

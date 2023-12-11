@@ -14,9 +14,10 @@ const Project = () => {
 
         <Section delay={0.2}>
           <p className="sub-text-color">
-            A React Todo application that allows users to create and delete
-            tasks. It features support for Dark/Light themes and user
-            authentication using a Node.js API with MySQL.{' '}
+            A React Todo application with features for task creation and deletion.
+            The application includes support for Dark/Light themes and utilizes JWT
+            for secure user authentication. Built using Express.js for backend
+            and MySQL for database.{' '}
             <strong className="text-black dark:text-white">
               Since Heroku is not free now API fuctionality include login or
               register will not working.
@@ -27,24 +28,11 @@ const Project = () => {
         <Section delay={0.3}>
           <div className="text-sm sm:text-base flex flex-col sm:gap-1">
             <div className="flex items-center">
-              <Badge>Stack</Badge>
-              <p className="sub-text-color ">
-                React.js, Tailwind, Express.js, JWT, MySQL
-              </p>
+              <Badge>Website</Badge>
+              <p className="sub-text-color">Not available</p>
             </div>
             <div className="flex items-center">
               <Badge>Source</Badge>
-              <a
-                className="link-color"
-                href="https://tnk-todo-app.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://tnk-todo-app.netlify.app/
-              </a>
-            </div>
-            <div className="flex items-center">
-              <Badge>Website</Badge>
               <a
                 className="link-color"
                 href="https://github.com/Dope21/react-todo-app"
@@ -53,6 +41,12 @@ const Project = () => {
               >
                 https://github.com/Dope21/react-todo-app
               </a>
+            </div>
+            <div className="flex items-center">
+              <Badge>Stack</Badge>
+              <p className="sub-text-color ">
+                React.js, Tailwind, Express.js, JWT, MySQL
+              </p>
             </div>
           </div>
         </Section>

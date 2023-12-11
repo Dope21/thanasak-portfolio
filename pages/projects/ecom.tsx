@@ -15,9 +15,9 @@ const Project = () => {
 
         <Section delay={0.2}>
           <p className="sub-text-color">
-            An e-commerce website for a restaurant. Allow customers to create
-            their accounts, browse the menu and order food online. This website
-            also come with{' '}
+            Designed and developed an e-commerce website for a restaurant,
+            allowing customers to create accounts, explore the menu, and place
+            online food orders. This website also come with{' '}
             <Link href="/projects/pos">
               <a className="link-color">a POS web application </a>
             </Link>{' '}
@@ -28,10 +28,8 @@ const Project = () => {
         <Section delay={0.3}>
           <div className="text-sm sm:text-base flex flex-col sm:gap-1">
             <div className="flex items-center">
-              <Badge>Stack</Badge>
-              <p className="sub-text-color ">
-                Bootstrap 5, SCSS, jQuery, PHP, MySQL
-              </p>
+              <Badge>Website</Badge>
+              <p className="sub-text-color">Not available</p>
             </div>
             <div className="flex items-center">
               <Badge>Source</Badge>
@@ -45,8 +43,10 @@ const Project = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <Badge>Website</Badge>
-              <p className="sub-text-color">Not available</p>
+              <Badge>Stack</Badge>
+              <p className="sub-text-color ">
+                Bootstrap 5, SCSS, jQuery, PHP, MySQL
+              </p>
             </div>
           </div>
         </Section>
