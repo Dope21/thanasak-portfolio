@@ -15,13 +15,13 @@ const Project = () => {
 
         <Section delay={0.2}>
           <p className="sub-text-color">
-            A POS dashboard application designed for restaurants, featuring
-            various management functions such as user and menu management, order
-            processing, and sales reporting. This application works with a{' '}
+            A POS (Poin of Sale) application specifically designed for
+            {' '}
             <Link href="/projects/ecom">
               <a className="link-color">Restaurant Website</a>
             </Link>{' '}
-            to support online orders from customers.
+            to support online food ordering from customers. Features include
+            user and menu management, order processing, and sales reporting.
           </p>
         </Section>
 

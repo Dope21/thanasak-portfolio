@@ -27,37 +27,37 @@ const Projects = () => {
             src={weather}
             alt="weather-app"
             title="Weather Report App"
-            desc="A weather report web application built with Next.js and the OpenWeatherMap API, featuring server-side rendering for improved performance."
+            desc="A responsive weather report web application built with Next.js and the OpenWeatherMap API."
             href="/projects/weather"
           />
           <BlogItem
             src={todo}
             alt="todo-app"
             title="Todo App"
-            desc="A React Todo application that allows users to create and delete tasks. It features support for Dark/Light themes and user authentication using a Node.js API."
+            desc="A React Todo application with features for task creation and deletion, Dark/Light themes, and JWT for secure user authentication."
             href="/projects/todo"
           />
           <BlogItem
             src={ecom}
             alt="restaurant-website"
             title="Restaurant Website"
-            desc="An e-commerce website for a restaurant. Allow customers to create their accounts, browse the menu  and order food online."
+            desc="An e-commerce website for a restaurant facilitate online food ordering."
             href="/projects/ecom"
           />
           <BlogItem
             src={pos}
             alt="restaurant-pos"
             title="Restaurant Management"
-            desc="A POS dashboard application designed for restaurants, featuring various management functions such as user and menu management, order processing, and sales reporting."
+            desc="A POS application specifically designed for Restaurant Website to support online food ordering from customers."
             href="/projects/pos"
           />
-          <BlogItem
+          {/* <BlogItem
             src={creative}
             alt="bootstrap-landing-page"
             title="Bootstrap 5 Landing page"
             desc="A Bootstrap responsive landing page with Semantic HTML and little animation with jQuery."
             href="/projects/creative"
-          />
+          /> */}
         </Section>
       </Section>
     </Layout>

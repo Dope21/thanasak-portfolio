@@ -15,7 +15,7 @@ const Project = () => {
 
         <Section delay={0.2}>
           <p className="sub-text-color">
-            Designed and developed an e-commerce website for a restaurant,
+            An e-commerce website for a restaurant,
             allowing customers to create accounts, explore the menu, and place
             online food orders. This website also come with{' '}
             <Link href="/projects/pos">
