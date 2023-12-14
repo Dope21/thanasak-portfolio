@@ -7,7 +7,6 @@ import weather from '../public/images/projects/weather_eyecatching.png'
 import todo from '../public/images/projects/todo_eyecatching.png'
 import ecom from '../public/images/projects/ecom_eyecatching.png'
 import pos from '../public/images/projects/pos_eyecatching.png'
-import creative from '../public/images/projects/creative_eyecatching.png'
 import amsa from '../public/images/projects/amsa_eyecatching.png'
 
 const Projects = () => {
@@ -51,13 +50,6 @@ const Projects = () => {
             desc="A POS application specifically designed for Restaurant Website to support online food ordering from customers."
             href="/projects/pos"
           />
-          {/* <BlogItem
-            src={creative}
-            alt="bootstrap-landing-page"
-            title="Bootstrap 5 Landing page"
-            desc="A Bootstrap responsive landing page with Semantic HTML and little animation with jQuery."
-            href="/projects/creative"
-          /> */}
         </Section>
       </Section>
     </Layout>
