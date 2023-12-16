@@ -62,7 +62,7 @@ const Projects = () => {
         <Title> Some projects I&apos;ve done !</Title>
         <Section delay={0.2}>
           {BLOGS.map(project => (
-            <BlogItem project={project} />
+            <BlogItem project={project} key={project.href} />
           ))}
         </Section>
       </Section>
