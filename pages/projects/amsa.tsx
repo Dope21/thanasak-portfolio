@@ -13,7 +13,7 @@ const Project = () => {
 
         <Section delay={0.2}>
           <p className="sub-text-color">
-            Our team developed an official website for The Asian Medical Student's
+            Our team developed an official website for The Asian Medical Student&apos;
             Association of Thailand, which serves as a platform for public relations
             and event registration.
           </p>
