@@ -8,6 +8,7 @@ import todo from '../public/images/projects/todo_eyecatching.png'
 import ecom from '../public/images/projects/ecom_eyecatching.png'
 import pos from '../public/images/projects/pos_eyecatching.png'
 import amsa from '../public/images/projects/amsa_eyecatching.png'
+import poker from '../public/images/projects/poker_eyecatching.png'
 
 const Projects = () => {
   return (
@@ -49,6 +50,13 @@ const Projects = () => {
             title="Restaurant Management"
             desc="A POS application specifically designed for Restaurant Website to support online food ordering from customers."
             href="/projects/pos"
+          />
+          <BlogItem
+            src={poker}
+            alt="poker-terminal"
+            title="Terminal Poker Game"
+            desc="A Poker Game playable in command line terminal create with Python."
+            href="/projects/poker"
           />
         </Section>
       </Section>
