@@ -1,21 +1,30 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { StaticImageData } from 'next/image'
 import { MainBtn } from './button'
 import { AiOutlineRight } from 'react-icons/ai'
 
-export const BlogItem = ({ src, alt, title, desc, href }) => {
+type BlogItemProps = {
+  thumnail: StaticImageData
+  alt: string
+  title: string
+  desc: string
+  href: string
+}
+
+export const BlogItem = ({ project }: { project: BlogItemProps }) => {
   return (
     <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-10 relative mb-12">
       <div className="max-w-[275px] max-h-[175px] flex items-center justify-center  shadow-lg">
-        <Image src={src} alt={alt} placeholder="blur" className="rounded-md" />
+        <Image src={project.thumnail} alt={project.alt} placeholder="blur" className="rounded-md" />
       </div>
 
       <div className="w-full text-center sm:text-left">
         <h4 className="text-xl main-text-color font-semibold mb-[10px]">
-          {title}
+          {project.title}
         </h4>
-        <p className="sub-text-color mb-4">{desc}</p>
-        <MainBtn href={href}>
+        <p className="sub-text-color mb-4">{project.desc}</p>
+        <MainBtn href={project.href}>
           View project
           <AiOutlineRight size={18} />
         </MainBtn>
