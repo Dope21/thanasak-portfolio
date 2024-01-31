@@ -32,18 +32,18 @@ const Socials = () => {
         @Dope21
       </Social>
       <Social
-        href={'linkedin.com/in/thanasak-limsila-99a814225'}
+        href={'https://www.linkedin.com/in/thanasak-limsila/'}
         icon={<AiFillLinkedin size={30} />}
       >
         @Thanasak Limsila
       </Social>
       <Social
         href={
-          'https://mail.google.com/mail/u/0/?fs=1&to=thanasaklimsila@gmail.com&tf=cm'
+          'https://mail.google.com/mail/u/0/?fs=1&to=tk.limsila@gmail.com&tf=cm'
         }
         icon={<AiOutlineGoogle size={30} />}
       >
-        Thanasaklimsila@gmail.com
+        tk.limsila@gmail.com
       </Social>
     </>
   )
