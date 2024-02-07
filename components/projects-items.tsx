@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/future/image'
 import Link from 'next/link'
 import { StaticImageData } from 'next/image'
 import { MainBtn } from './button'
@@ -15,8 +15,13 @@ type BlogItemProps = {
 export const BlogItem = ({ project }: { project: BlogItemProps }) => {
   return (
     <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-10 relative mb-12">
-      <div className="max-w-[275px] max-h-[175px] flex items-center justify-center  shadow-lg">
-        <Image src={project.thumnail} alt={project.alt} placeholder="blur" className="rounded-md" />
+      <div className="max-w-[275px] h-[175px] flex items-center justify-center shadow-lg rounded-md overflow-hidden">
+        <Image
+          src={project.thumnail}
+          alt={project.alt}
+          placeholder="blur"
+          className='h-full object-cover'
+        />
       </div>
 
       <div className="w-full text-center sm:text-left">
