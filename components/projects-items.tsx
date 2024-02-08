@@ -40,10 +40,10 @@ export const BlogItem = ({ project }: { project: BlogItemProps }) => {
 
 export const Title = ({ children, badge }) => {
   return (
-    <div className="flex items-center mb-5">
+    <div className="flex items-center mb-5 gap-2">
       <Link href="/projects">
         <a className="link-color flex items-center">
-          Projects <AiOutlineRight size={10} className="mx-2" />
+          Projects <AiOutlineRight size={10} className="ml-2" />
         </a>
       </Link>
       <h3 className="text-xl font-bold main-text-color">{children}</h3>
