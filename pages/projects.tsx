@@ -14,9 +14,16 @@ const BLOGS = [
   {
     thumnail: amsa,
     alt: "amsa-th",
-    title: "AMSA Thailand's Website",
-    desc: "An official website for The Asian Medical Student's Association of Thailand.",
+    title: "AMSA Thailand's Official Website",
+    desc: "Worked as a Back-End Developer, Developed an official website for The Asian Medical Student's Association of Thailand.",
     href: "/projects/amsa"
+  },
+  {
+    thumnail: food,
+    alt: "grab-me-app",
+    title: "Grab Me App",
+    desc: "A simple CRUD app built with APS.NET MVC to post food ordering requests, with other person able to commit to purchasing the requested food for the requester.",
+    href: "/projects/food"
   },
   {
     thumnail: weather,
@@ -45,13 +52,6 @@ const BLOGS = [
     title: "Restaurant Management",
     desc: "A POS application specifically designed for Restaurant Website to support online food ordering from customers.",
     href: "/projects/pos"
-  },
-  {
-    thumnail: food,
-    alt: "grab-me-app",
-    title: "Grab Me App",
-    desc: "A platform to post food ordering requests, with other users able to commit to purchasing the requested food for the requester.",
-    href: "/projects/food"
   },
 ]
 
