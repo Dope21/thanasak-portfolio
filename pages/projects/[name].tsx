@@ -5,6 +5,11 @@ import { Title, Badge, WorkImage } from '../../components/projects-items'
 import { useRouter } from 'next/router'
 import PROJECTS from './PROJECTS-DETAIL'
 
+const printDescription = (str) => {
+  const newText = str.split('\n').map(str => <p className="sub-text-color">{str}</p >);
+  return newText
+}
+
 const Project = () => {
   const { name } = useRouter().query
   const [project, setProject] = useState(null)
@@ -24,9 +29,9 @@ const Project = () => {
         <Title badge="2023">{project.title}</Title>
 
         <Section delay={0.2}>
-          <p className="sub-text-color">
-            {project.desc}
-          </p>
+          <div className='flex flex-col gap-2'>
+            {printDescription(project.desc)}
+          </div>
         </Section>
 
         <Section delay={0.3}>

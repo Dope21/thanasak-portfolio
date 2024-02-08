@@ -15,14 +15,14 @@ const BLOGS = [
     thumnail: amsa,
     alt: "amsa-th",
     title: "AMSA Thailand's Official Website",
-    desc: "Worked as a Back-End Developer, Developed an official website for The Asian Medical Student's Association of Thailand.",
+    desc: "Worked as a Back-End Developer, Developed a website serves as a platform for public relations and event registration.",
     href: "/projects/amsa"
   },
   {
     thumnail: food,
     alt: "grab-me-app",
     title: "Grab Me App",
-    desc: "A simple CRUD app built with APS.NET MVC to post food ordering requests, with other person able to commit to purchasing the requested food for the requester.",
+    desc: "The platform allows users to post food ordering requests, with other users able to commit to purchasing the requested food for the requester.",
     href: "/projects/food"
   },
   {
