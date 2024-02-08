@@ -63,7 +63,7 @@ export const Badge = ({ children }) => {
 export const WorkImage = ({ src, alt }) => {
   return (
     <div className="max-w-[480px] mb-4 flex mx-auto shadow-lg">
-      <Image src={src} alt={alt} className=" rounded-md" />
+      <Image src={src} alt={alt} className="rounded-md" width={500} height={500} />
     </div>
   )
 }
