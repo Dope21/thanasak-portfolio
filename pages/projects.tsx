@@ -8,6 +8,7 @@ import todo from '../public/images/projects/todo_eyecatching.png'
 import ecom from '../public/images/projects/ecom_eyecatching.png'
 import pos from '../public/images/projects/pos_eyecatching.png'
 import amsa from '../public/images/projects/amsa_eyecatching.png'
+import food from '../public/images/projects/food_eyecatching.png'
 
 const BLOGS = [
   {
@@ -44,6 +45,13 @@ const BLOGS = [
     title: "Restaurant Management",
     desc: "A POS application specifically designed for Restaurant Website to support online food ordering from customers.",
     href: "/projects/pos"
+  },
+  {
+    thumnail: food,
+    alt: "grab-me-app",
+    title: "Grab Me App",
+    desc: "A platform to post food ordering requests, with other users able to commit to purchasing the requested food for the requester.",
+    href: "/projects/food"
   },
 ]
 

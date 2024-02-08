@@ -55,6 +55,17 @@ const PROJECTS = [
     stack: 'HTML, SCSS, jQuery, PHP, MySQL',
     images: ['pos_01.png', 'pos_02.png', 'pos_03.png']
   },
+  {
+    name: 'food',
+    title: 'Grab Me App',
+    desc: `A platform that enables users to post food ordering requests, with other users able to commit to purchasing
+          the requested food for the requester. Utilized Robot Framework for API unit testing.`,
+    website: 'Not available',
+    source: 'https://github.com/Dope21/asp.net-grab-me-app',
+    stack: 'React, C#, ASP.NET MVC, Robot Framework, Docker',
+    images: ['food_eyecatching.png', 'food_02.png', 'food_03.png', 'food_04.png']
+
+  },
 ]
 
 export default PROJECTS
