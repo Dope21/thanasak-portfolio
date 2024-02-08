@@ -54,7 +54,7 @@ export const Title = ({ children, badge }) => {
 
 export const Badge = ({ children }) => {
   return (
-    <span className="badge-color uppercase mx-2 text-xs px-2 py-[1px] flex items-center justify-center rounded-xl font-bold">
+    <span className="badge-color uppercase mr-2 text-xs px-2 py-[1px] rounded-xl font-bold">
       {children}
     </span>
   )

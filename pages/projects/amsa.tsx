@@ -28,7 +28,7 @@ const Project = () => {
 
         <Section delay={0.3}>
           <div className="text-sm sm:text-base flex flex-col sm:gap-1">
-            <div className="flex items-center">
+            <div className="">
               <Badge>Website</Badge>
               <a className='link-color'
                 href="https://amsa-th.org/"
@@ -38,16 +38,16 @@ const Project = () => {
                 https://amsa-th.org/
               </a>
             </div>
-            <div className="flex items-center">
+            <div className="">
               <Badge>Source</Badge>
-              <p className="sub-text-color ">Private Repository</p>
+              <span className="sub-text-color ">Private Repository</span>
             </div>
-            <div className="flex items-center">
+            <div className="">
               <Badge>Stack</Badge>
-              <p className="sub-text-color ">
+              <span className="sub-text-color ">
                 Next.js, Typescript, Tailwind, MUI, Node.js,
                 Express.js, MongoDB
-              </p>
+              </span>
             </div>
           </div>
         </Section>
