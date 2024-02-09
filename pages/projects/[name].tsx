@@ -8,7 +8,7 @@ import { Title, Badge, WorkImage } from '../../components/projects-items'
 import PROJECTS from './PROJECTS-DETAIL'
 
 const printDescription = (str) => {
-  const newText = str.split('\n').map(str => <p className="sub-text-color">{str}</p >);
+  const newText = str.split('\n').map((str, index) => <p className="sub-text-color" key={'p-' + index}>{str}</p >);
   return newText
 }
 
