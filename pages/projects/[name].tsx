@@ -5,7 +5,7 @@ import Layout from '../../components/layout/content'
 import Section from '../../components/section'
 import { Title, Badge, WorkImage } from '../../components/projects-items'
 
-import PROJECTS from './PROJECTS-DETAIL'
+import { PROJECTS } from './PROJECTS-DETAIL'
 
 const printDescription = (str) => {
   const newText = str.split('\n').map((str, index) => <p className="sub-text-color" key={'p-' + index}>{str}</p >);

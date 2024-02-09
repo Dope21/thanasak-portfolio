@@ -1,4 +1,4 @@
-const PROJECTS = [
+export const PROJECTS = [
   {
     name: 'amsa',
     title: `AMSA Thailand's Official Website`,
@@ -58,5 +58,3 @@ const PROJECTS = [
 
   },
 ]
-
-export default PROJECTS
