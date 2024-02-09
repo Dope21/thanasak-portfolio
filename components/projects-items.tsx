@@ -30,7 +30,7 @@ export const BlogItem = ({ project }: { project: BlogItemProps }) => {
         </h4>
         <p className="sub-text-color mb-4">{project.desc}</p>
         <MainBtn href={project.href}>
-          View project
+          More detail
           <AiOutlineRight size={18} />
         </MainBtn>
       </div>
