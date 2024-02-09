@@ -29,28 +29,28 @@ const BLOGS = [
     thumnail: weather,
     alt: "weather-app",
     title: "Weather Report App",
-    desc: "A responsive weather report web application built with Next.js and the OpenWeatherMap API.",
+    desc: "A responsive application allows users to search for the weather report of that day by typing the name of the interested city in the search bar.",
     href: "/projects/weather"
   },
   {
     thumnail: todo,
     alt: "todo-app",
     title: "Todo App",
-    desc: "A React Todo application with features for task creation and deletion, Dark/Light themes, and JWT for secure user authentication.",
+    desc: "A Todo application allows users to create and delete tasks, supports Dark/Light themes, and has an authentication system built with JWT.",
     href: "/projects/todo"
   },
   {
     thumnail: ecom,
     alt: "restaurant-website",
     title: "Restaurant Website",
-    desc: "An e-commerce website for a restaurant facilitate online food ordering.",
+    desc: "An E-commerce website for a restaurant allows customers to create accounts, explore the menu, and place online food orders.",
     href: "/projects/ecom"
   },
   {
     thumnail: pos,
     alt: "restaurant-pos",
     title: "Restaurant Management",
-    desc: "A POS application specifically designed for Restaurant Website to support online food ordering from customers.",
+    desc: "A POS application specifically designed for The Restaurant Website to support online food ordering and in-house customers.",
     href: "/projects/pos"
   },
 ]

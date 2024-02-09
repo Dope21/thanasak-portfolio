@@ -12,7 +12,7 @@ const PROJECTS = [
   {
     name: 'weather',
     title: 'Weather Report App',
-    desc: `A responsive weather report web application that supports Server-Side Rendering, a Search box with autocomplete suggestions, and features a smooth fade-in animation.`,
+    desc: `A responsive application that allows users to search for the weather for that day by typing the name of their city of interest in the search bar.`,
     website: 'https://weather-app-three-theta.vercel.app/',
     source: 'https://github.com/Dope21/next-weather-app/',
     stack: 'Next.js, Tailwind, OpenWeatherMap API',
@@ -21,7 +21,7 @@ const PROJECTS = [
   {
     name: 'todo',
     title: 'Todo App',
-    desc: `A React Todo application with features for task creation and deletion. The application includes support for Dark/Light themes and utilizes JWT for secure user authentication. Built using Express.js for backend and MySQL for database.`,
+    desc: `A Todo application allows users to create and delete tasks, supports Dark/Light themes, and has an authentication system built with JWT, Express, and MySQL.`,
     website: 'Not available',
     source: 'https://github.com/Dope21/react-todo-app',
     stack: 'React.js, Tailwind, Express.js, JWT, MySQL',
@@ -30,7 +30,8 @@ const PROJECTS = [
   {
     name: 'ecom',
     title: 'Restaurant Website',
-    desc: `An e-commerce website for a restaurant, allowing customers to create accounts, explore the menu, and place online food orders. This website also come with a POS web application for management.`,
+    desc: `An E-commerce website for a restaurant allows customers to create accounts, explore the menu, and place online food orders. 
+          Additionally, the website includes a POS application for management.`,
     website: 'Not available',
     source: 'https://github.com/Dope21/restaurant-management',
     stack: 'Bootstrap 5, SCSS, jQuery, PHP, MySQL',
@@ -39,7 +40,7 @@ const PROJECTS = [
   {
     name: 'pos',
     title: 'Restaurant Management',
-    desc: `A POS (Poin of Sale) application specifically designed for Restaurant Website to support online food ordering from customers. Features include user and menu management, order processing, and sales reporting.`,
+    desc: `A POS (Point of Sale) application specifically designed for The Restaurant Website to support online food ordering and in-house customers. Features include user and menu management, order processing, and sales reporting.`,
     website: 'Not available',
     source: 'https://github.com/Dope21/restaurant-management',
     stack: 'HTML, SCSS, jQuery, PHP, MySQL',

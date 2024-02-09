@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
+
 import Layout from '../../components/layout/content'
 import Section from '../../components/section'
 import { Title, Badge, WorkImage } from '../../components/projects-items'
-import { useRouter } from 'next/router'
+
 import PROJECTS from './PROJECTS-DETAIL'
 
 const printDescription = (str) => {
